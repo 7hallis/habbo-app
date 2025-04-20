@@ -87,7 +87,7 @@ interface PageProps {
   };
 }
 export default async function PerfilPage({ params }: PageProps) {
-  const { username } = await params;
+  const { username } = params;
 
   const decodedUsername = decodeURIComponent(username);
 
