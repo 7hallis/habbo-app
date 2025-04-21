@@ -81,14 +81,18 @@ async function getHabboData(username: string) {
   return { userData, rooms, groups, badges, friends };
 }
 
-interface PageProps {
-  params: {
-    username: string;
-  };
+export interface PageProps {
+  params: Promise<{ username: string }>;
+  searchParams?:
+    | Promise<Record<string, string | string[] | undefined>>
+    | undefined; // Alinhado com o Next.js
 }
-export default async function PerfilPage({ params }: PageProps) {
-  const { username } = params;
 
+// Removed unused searchParams declaration
+
+export default async function PerfilPage({ params }: PageProps) {
+  const resolvedParams = await params; // Aguarde a resolução do Promise
+  const { username } = resolvedParams;
   const decodedUsername = decodeURIComponent(username);
 
   let userData, rooms, groups, badges, friends;

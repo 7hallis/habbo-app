@@ -1,20 +1,16 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+module.exports = {
   images: {
     remotePatterns: [
       {
         protocol: "https",
         hostname: "www.habbo.com.br",
-        pathname: "/**", // Permite todas as rotas do domínio
+        pathname: "/**",
       },
       {
         protocol: "https",
-        hostname: "images.habbo.com", // Adiciona suporte para o domínio de emblemas
+        hostname: "images.habbo.com",
         pathname: "/**",
       },
     ],
   },
 };
-
-export default nextConfig;
