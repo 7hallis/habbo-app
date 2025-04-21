@@ -55,7 +55,7 @@ Aplicação feita com **Next.js** e **React** para consultar **usuários do Habb
 
 ```bash
 # Clonar repositório
-[git clone https://github.com/seunome/habbo-br-profile-viewer.git](https://github.com/7hallis/habbo-app.git)
+git clone https://github.com/seunome/habbo-br-profile-viewer.git
 
 # Entrar no projeto
 cd habbo-app
