@@ -70,7 +70,8 @@ npm run dev
 ```
 
 ## 🌍 Deploy
-Link do projeto online na Vercel : https://habbo-app.vercel.app
+Link do projeto online na Vercel : https://habbo-app.vercel.app 
+<br>
 Este projeto está pronto para **deploy na [Vercel](https://vercel.com/)**. Basta importar o repositório via GitHub e configurar como projeto Next.js.
 
 ## 🔒 API usada
